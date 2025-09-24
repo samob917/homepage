@@ -87,8 +87,9 @@ time, mark, audio, video {
 .about-background {
   background-color: rgb(0, 88, 150);
   width: 250vw;
-  height: 60vh;
-  transform: translate(0, -120vh) rotate(-30deg);
+  height: 10vh;
+  transform: translate(0, -110vh) scaleY(10) rotate(-4deg);
+  /*transform: translate(0, -120vh) rotate(-30deg);*/
 }
 
 .content {
@@ -97,8 +98,130 @@ time, mark, audio, video {
   align-items: center;
 }
 
+.content-head {
+    padding-bottom: 1rem;
+}
+
 .work-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.work-card {
+  width: 90vw;
+  box-shadow: 0px 0px 5px gray;
+}
+
+.work-card-top {
+  height: 80vw;
+  background-color: rgba(152, 63, 235, 0.545);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.work-card-top h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.work-card-bottom {
+  height: 40vw;
+}
+
+.work-card-bottom-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.work-card-bottom-title h3 {
+  font-size: 1.5rem;
+}
+
+.work-card-bottom-text {
+  margin: -0.5rem 1rem;
+}
+
+.work-card-bottom-text p {
+  font-size: 0.9rem;
+}
+
+.work-card-logos {
+  display: flex;
+  gap: 1rem;
+}
+
+.work-card-logos svg,
+.work-card-logos img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#orange {
+  background-color: rgba(231, 183, 92, 0.857);
+}
+
+#green {
+  background-color: rgba(83, 229, 83, 0.84);
+}
+
+#pink {
+  background-color: rgba(230, 146, 160, 0.771);
+}
+
+#blue {
+  background-color: rgba(71, 71, 224, 0.817);
+}
+
+.contact {
+  margin-top: 3rem;
+  background-color: rgb(116, 160, 192);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  color: white;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+.contact>p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.contact-address,
+.contact-phone{
+  margin: 1rem;
+  width: 100%;
+  padding-left: 2rem;
+}
+
+.contact-image {
+  margin-top: 1rem;
+  background-image: url('./assets/pexels-stefanprutschphotography-19001390.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 55vh;
+  width: 100%;
+}
+.contact-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+}
+.contact-logos img {
+  width: 10vw;
+  height: 10vw;
 }
