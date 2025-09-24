@@ -551,7 +551,7 @@ time, mark, audio, video {
 }
 
 .contact-details {
-  width: 50%;
+  width: 40%;
   height: 70%;
   margin-top: 3rem;
   display: flex;
@@ -588,7 +588,7 @@ time, mark, audio, video {
   background-position: center;
   background-size: cover;
   height: 40vh;
-  width: 35%;
+  width: 50%;
 }
 .contact-logos {
   display: flex;
@@ -600,11 +600,12 @@ time, mark, audio, video {
   padding-left: 1rem;
 }
 .contact-logos img {
-  width: 5vw;
-  height: 5vw;
+  width: 4vw;
+  height: 4vw;
 }
 
-.email {
+.email,
+.phone {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -612,6 +613,7 @@ time, mark, audio, video {
 
 .email svg,
 .phone svg {
+  display: block;
   height: 2vh;
   width: 2vh;
 }
