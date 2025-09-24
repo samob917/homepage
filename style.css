@@ -36,6 +36,8 @@ time, mark, audio, video {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .about-image {
@@ -224,4 +226,75 @@ time, mark, audio, video {
 .contact-logos img {
   width: 10vw;
   height: 10vw;
+}
+
+@media (min-width: 700px) {
+  .content>h2 {
+    margin-left: 9vw;
+    align-self: baseline;
+  }
+
+  .work-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-card {
+  width: 40vw;
+  box-shadow: 0px 0px 5px gray;
+}
+
+.work-card-top {
+  height: 30vw;
+  background-color: rgba(152, 63, 235, 0.545);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.work-card-top h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.work-card-bottom {
+  height: 20vw;
+}
+
+.work-card-bottom-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.work-card-bottom-title h3 {
+  font-size: 2rem;
+}
+
+.work-card-bottom-text {
+  margin: -0.5rem 1rem;
+}
+
+.work-card-bottom-text p {
+  font-size: 1.2rem;
+}
+
+.work-card-logos {
+  display: flex;
+  gap: 1rem;
+}
+
+.work-card-logos svg,
+.work-card-logos img {
+  height: 2rem;
+  width: 2rem;
+}
+
 }
